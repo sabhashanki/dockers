@@ -2,9 +2,6 @@ from flask import Flask, request
 import pandas as pd
 import numpy as np
 import pickle
-import flasgger
-from flasgger import Swagger
-
 
 app = Flask(__name__)
 model = pickle.load(open('random_model.pkl','rb'))
